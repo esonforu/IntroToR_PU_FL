@@ -8,9 +8,9 @@
 # to combine multi files in a dataframe
 
 # Load in three seperate files
-df1 <- read.csv("E://study/IT/R/2006.csv")
-df2 <- read.csv("E://study/IT/R/2007.csv")
-df3 <- read.csv("E://study/IT/R/2008.csv")
+df1 <- read.csv("2006.csv")
+df2 <- read.csv("2007.csv")
+df3 <- read.csv("2008.csv")
 
 # check the dimension
 dim(df1)
@@ -391,10 +391,10 @@ dim(activeairports("CA"))[1]
 
 # sapply(X, FUN, ..., simplify = TRUE, USE.NAMES = TRUE)
 
-# The R platform provides a built-in vector called ¡°state.abb.¡±
+# The R platform provides a built-in vector called Â¡Â°state.abb.Â¡Â±
 
 # Try the one line of code given below, 
-# which will run the function ¡°activeairports¡± that we designed
+# which will run the function Â¡Â°activeairportsÂ¡Â± that we designed
 # on each element of the built-in vector state.abb
 # and compare your results 
 # with the number of airports in Indiana, Illinois, and California. 
@@ -402,12 +402,12 @@ dim(activeairports("CA"))[1]
 
 sapply(state.abb,function(x) dim(activeairports(x))[1])
 
-# We included the ¡°[1]¡± there 
+# We included the Â¡Â°[1]Â¡Â± there 
 # so that we could only see the first dimension of the result.
 
 # The sapply function is used to 
 # apply a function to every element of a vector. 
-# In this case, the function we apply to each state (referred to as ¡°x¡± here) 
+# In this case, the function we apply to each state (referred to as Â¡Â°xÂ¡Â± here) 
 # is: dim(activeairports(x))[1]
 
 
