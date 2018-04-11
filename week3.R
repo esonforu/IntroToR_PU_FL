@@ -8,7 +8,7 @@
 sort(table(myDF$Origin))
 ?sort
 
-# Loook at the origin airports in order
+# Look at the origin airports in order
 # from most popular to least popular
 # by using the decreasing=T parameter when we sort
 sort(table(myDF$Origin), decreasing = T)
