@@ -1,4 +1,4 @@
-myDF <- read.csv("E://study/IT/R/2008.csv")
+myDF <- read.csv("2008.csv")
 
 head(myDF)
 tail(myDF)
@@ -31,19 +31,19 @@ sum(myDF$Dest == "JFK")
 
 
    #Quiz 3
-   #In 2008, how many flights departed from O¡¯Hare Airport (ORD)?
+   #In 2008, how many flights departed from OÂ¡Â¯Hare Airport (ORD)?
 
 sum(myDF$Origin == "ORD")
   
-   #In 2008, how many flights arrived at O¡¯Hare Airport (ORD)?
+   #In 2008, how many flights arrived at OÂ¡Â¯Hare Airport (ORD)?
 
 sum(myDF$Dest == "ORD")
   
-   #How many flights in the data set departed from the Indianapolis Airport (IND) and arrived at the O¡¯Hare Airport (ORD)?
+   #How many flights in the data set departed from the Indianapolis Airport (IND) and arrived at the OÂ¡Â¯Hare Airport (ORD)?
 
 sum(myDF$Origin == "IND" & myDF$Dest =="ORD")
    # Teacher's answer note
-   #sum((myDF$Origin == ¡°IND¡±) & (myDF$Dest == ¡°ORD¡±))
+   #sum((myDF$Origin == Â¡Â°INDÂ¡Â±) & (myDF$Dest == Â¡Â°ORDÂ¡Â±))
 sum((myDF$Origin == "IND") & (myDF$Dest == "ORD"))
 
 
